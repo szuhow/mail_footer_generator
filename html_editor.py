@@ -3,9 +3,9 @@ import codecs
 from bs4 import BeautifulSoup
 import os
 import csv
-rel_csv_path = "contacts.csv"
+rel_csv_path = input("Podaj nazwe pliku csv z kontaktami: \n")
 script_dir = os.path.dirname(__file__)
-rel_path = "index_edited_2.html"
+rel_path = input("Podaj nazwe pliku html (template): \n")
 abs_file_path = os.path.join(script_dir, rel_path)
 abs_csv_file_path = os.path.join(script_dir, rel_csv_path)
 f=codecs.open(abs_file_path, 'r',"utf-8")
